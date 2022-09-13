@@ -1,7 +1,24 @@
 {
   "timeZone": "America/Chicago",
-  "dependencies": {
-  },
+  "dependencies": {},
   "exceptionLogging": "STACKDRIVER",
-  "runtimeVersion": "V8"
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/drive"
+  ],
+  "addOns": {
+    "common": {
+      "name": "Tinkercad to RDWorks SVG Converter",
+      "logoUrl": "https://cmsv2-assets.apptegy.net/uploads/5877/logo/3225/Clippers-NoText-CMYK.png",
+      "homepageTrigger": {
+        "runFunction": "onOpen"
+      }
+    },
+    "gmail": {},
+    "drive": {},
+    "calendar": {},
+    "docs": {},
+    "sheets": {},
+    "slides": {}
+  }
 }
