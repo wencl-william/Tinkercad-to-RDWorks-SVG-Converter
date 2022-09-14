@@ -8,7 +8,7 @@
   ],
   "addOns": {
     "common": {
-      "name": "Tinkercad to RDWorks SVG Converter",
+      "name": "SVG Converter",
       "logoUrl": "https://cmsv2-assets.apptegy.net/uploads/5877/logo/3225/Clippers-NoText-CMYK.png",
       "homepageTrigger": {
         "runFunction": "onOpen"
