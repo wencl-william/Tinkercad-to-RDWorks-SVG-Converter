@@ -4,7 +4,8 @@
   "exceptionLogging": "STACKDRIVER",
   "runtimeVersion": "V8",
   "oauthScopes": [
-    "https://www.googleapis.com/auth/drive"
+    "https://www.googleapis.com/auth/drive",
+    "https://www.googleapis.com/auth/drive.addons.metadata.readonly"
   ],
   "addOns": {
     "common": {
@@ -14,11 +15,10 @@
         "runFunction": "onOpen"
       }
     },
-    "gmail": {},
-    "drive": {},
-    "calendar": {},
-    "docs": {},
-    "sheets": {},
-    "slides": {}
+    "drive": {
+      "onItemsSelectedTrigger":{
+        "runFunction":"onSelect"
+      }
+    }
   }
 }
