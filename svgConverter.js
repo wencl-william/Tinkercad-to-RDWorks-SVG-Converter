@@ -1,5 +1,5 @@
-function tinkerCadSVGtoRDWorksSVG() {
-  var file = DriveApp.getFileById("12Y1xYCwUtsfIofyRylg1QCk8ASoO96jg");
+function tinkerCadSVGtoRDWorksSVG(fileId) {
+  var file = DriveApp.getFileById(fileId);
   var svgFile = XmlService.parse(file.getBlob().getDataAsString());
   var svg = svgFile.getRootElement();
   var elements = svg.getChildren();
@@ -24,6 +24,6 @@ function tinkerCadSVGtoRDWorksSVG() {
   
   var newFile = file.makeCopy();
   newFile.setContent(XmlService.getPrettyFormat().format(svgFile))
-  newFile.setTrashed(true)
-  console.log(newFile.getDownloadUrl())
+  
+  return newFile
 }
