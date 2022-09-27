@@ -111,9 +111,9 @@ function onSelect(e) {
         }
       }
     }
-    if(e.drive.activeCursorItem.mimeType == MimeType.SVG){
-      files.push(e.drive.activeCursorItem);
-    };
+    // if(e.drive.activeCursorItem.mimeType == MimeType.SVG){
+    //   files.push(e.drive.activeCursorItem);
+    // };
 
     return genMainCard(files);
 }
