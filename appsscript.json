@@ -11,7 +11,7 @@
   "addOns": {
     "common": {
       "name": "SVG Converter",
-      "logoUrl": "https://cmsv2-assets.apptegy.net/uploads/5877/logo/3225/Clippers-NoText-CMYK.png",
+      "logoUrl": "https://5il.co/1ijad",
       "homepageTrigger": {
         "runFunction": "onOpen"
       }
