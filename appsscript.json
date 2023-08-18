@@ -5,20 +5,19 @@
   "runtimeVersion": "V8",
   "oauthScopes": [
     "https://www.googleapis.com/auth/drive",
-    "https://www.googleapis.com/auth/drive.addons.metadata.readonly",
-    "https://www.googleapis.com/auth/script.external_request"
+    "https://www.googleapis.com/auth/drive.addons.metadata.readonly"
   ],
   "addOns": {
     "common": {
       "name": "SVG Converter",
-      "logoUrl": "https://5il.co/1ijad",
+      "logoUrl": "https://5il.co/1im8c",
       "homepageTrigger": {
         "runFunction": "onOpen"
       }
     },
     "drive": {
-      "onItemsSelectedTrigger":{
-        "runFunction":"onSelect"
+      "onItemsSelectedTrigger": {
+        "runFunction": "onSelect"
       }
     }
   }
